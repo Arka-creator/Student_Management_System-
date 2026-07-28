@@ -5,7 +5,7 @@ try:
     db = mysql.connector.connect(
         host="localhost",
         user="root",
-        password=getpass("Enter MySQL password: ")
+        password=getpass("Enter MySQL password: "),
         database="student_db"
     )
 except mysql.connector.Error as err:
